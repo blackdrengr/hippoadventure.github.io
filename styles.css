@@ -2,11 +2,6 @@ body {
     background-color: #ffc200;
 }
 
-@media only screen and (max-width: 600px) {
-    h1 {
-        font-size: 2rem;
-    }
-
 .horizontal {
     width: 5rem;
     display: flex;
@@ -38,6 +33,10 @@ h3 {
     font-size: 1.5rem;
     line-height: 100%;
     text-align: right;
+}
+
+h4 {
+    display: none;
 }
 
 p {
@@ -194,4 +193,124 @@ p {
     text-decoration: none;
     cursor: pointer;
   }
+
+@media only screen and (max-width: 600px) {
+    body {
+        width:fit-content
+        overflow-x;
+    }
+
+    .game {
+        width: 200px;
+        align-content: center;
+        margin: auto;
+    }
+
+    .score {
+        width: 2rem;
+        height: 2rem;
+        margin: auto;
+        position: relative;
+        bottom: 1.45rem;
+        left: 7rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    h4 {
+        display: block;
+        font-size: 1rem;
+        font-family: "VT323", monospace;
+        text-align: center;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    #heart {
+        width: 0.5rem;
+        height: 0.5rem;
+        background-size: 0.5rem 0.5rem;
+    }
+
+    .horizontal {
+        width: 2rem;
+    }
+
+    .container {
+        width: 12.5rem;
+        height: 4rem;
+        padding: 0px;
+    }
+
+    #start {
+        display: none;
+    }
+
+    #exit {
+        display: none;
+    }
+
+    #hippo {
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
+        top: 170px;
+        left: 80px;
+    }
+
+    @keyframes jump {
+        0% { 
+            top: 150px;
+        }
+    
+        30% {
+            top: 80px;
+        }
+    
+        50% {
+            top: 70px;
+        }
+    
+        80% {
+            top: 80px;
+        }
+    
+        100% {
+            top: 150px;
+        }
+    }
+
+    #obstacle {
+        width: 20px;
+        height: 20px;
+        top: 150px;
+    
+        background-image: url("img/stones.png");
+        background-size: 20px 20px;
+    
+        animation: block 1.8s infinite linear;
+    }
+
+    @keyframes block {
+        0% {
+            left: 200px;
+        }
+    
+        100% {
+            left: -20px;
+        }
+    }
+}
 
