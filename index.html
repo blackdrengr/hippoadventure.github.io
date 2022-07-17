@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventures of Hippo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="img/fav-icon" href="img/hippo.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Adventures of Hippo</h1>
+    </div>
+    <div class="game">
+        <div id="hippo"></div>
+        <div id="obstacle"></div>
+        <div class="horizontal">
+            <div id="heart"></div>
+            <div id="heart"></div>
+            <div id="heart"></div>
+        </div>
+        <div class="score">
+            <h3>0010</h3>
+        </div>
+        <div id="start"></div>
+        <div id="exit"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+    <div class="container">
+        <h2>Press any key to jump!</h2>
+        <p>*Watch out for the obstacles</p>
+    </div>
+
+    <div id="gameOver" class="modal">
+    <!-- Modal content --> 
+    <!-- <span class="close">&times;</span> -->
+        <div class="modal-content">
+            <div class="modal-texts">
+                <p>Your score:</p>
+                <div id="score">
+                    <h2>0100</h2>
+                </div>
+                <button class="button">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
